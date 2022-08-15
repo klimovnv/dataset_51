@@ -1,6 +1,7 @@
 import argparse
+import sys
 
-def parser_arguments():
+def parser_arguments(str_arg=None):
     '''
     Manage the input from the terminal.
     :return: parser
@@ -42,5 +43,7 @@ def parser_arguments():
     parser.add_argument('--seed', required=False, type=int, default=None,
                         metavar="integer number")
 
+    parser.add_argument('--outfile', required=False, nargs='?', type=str, default=sys.stdout)
 
-    return parser.parse_args()
+
+    return parser.parse_args(str_arg)
