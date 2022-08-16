@@ -13,7 +13,6 @@ def parse_args():
 
 
 def main(args):
-
     if os.path.isdir("~/.fiftyone"):
         os.system("rm -r ~/.fiftyone")
 
