@@ -3,9 +3,9 @@ import sys
 import fiftyone as fo
 import fiftyone.zoo as foz
 from fiftyone import ViewField as F
-import dg_parser
-from utils import remove_nonoverlap_imgs_labels, gen_export_name
-from dataset_yaml_manipulate import correct_dataset_yaml
+import dataset_51.dg_parser
+from dataset_51.utils import remove_nonoverlap_imgs_labels, gen_export_name
+from dataset_51.dataset_yaml_manipulate import correct_dataset_yaml
 
 
 def parse_args():
